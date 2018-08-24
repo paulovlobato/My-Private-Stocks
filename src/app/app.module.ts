@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http'
 
 // Services
-import { StockService } from './services/stock.service'
+import { StockService } from './services/stock.service';
+import { SummaryComponent } from './components/summary/summary.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,
