@@ -7,13 +7,13 @@ import { StockInterface, StockService } from './services/stock.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myPrivateStocks';
+  // title = 'myPrivateStocks';
 
-  stocks: Array<StockInterface>;
+  // stocks: Array<StockInterface>;
 
-  constructor(service: StockService)   {
-    service.load(['AAPL']).subscribe(stocks => {
-      this.stocks = stocks;
-    });
-  }
+  // constructor(service: StockService)   {
+  //   service.load(['AAPL']).subscribe(stocks => {
+  //     this.stocks = stocks;
+  //   });
+  // }
 }

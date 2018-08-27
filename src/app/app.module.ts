@@ -5,19 +5,27 @@ import { AppComponent } from './app.component';
 
 // Plugins
 import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 // Services
 import { StockService } from './services/stock.service';
-import { SummaryComponent } from './components/summary/summary.component'
+import { SummaryComponent } from './components/summary/summary.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ManageComponent } from './components/manage/manage.component'
+import { AppRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SummaryComponent
+    SummaryComponent,
+    DashboardComponent,
+    ManageComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    AppRoutes
   ],
   providers: [ 
     StockService,
